@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.DetailsActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_details_storage_number_text_view"
+                android:background="@drawable/ic_number_background"
+                android:backgroundTint="#19CA92"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="5.1.1"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginHorizontal="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/activity_details_title_text_view"
+                    android:textColor="#2B2A41"
+                    android:textSize="15sp"
+                    tools:text="Чайник электрический"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/activity_details_description_text_view"
+                    android:textColor="#6E7191"
+                    tools:text="Продукт с партийным учётом,  с позициями которого ранее не работали. Утверждаем все."
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/activity_details_image_image_view"
+                android:layout_marginHorizontal="5dp"
+                android:contentDescription="@string/product_ico"
+                android:scaleType="fitXY"
+                android:layout_width="64dp"
+                android:layout_height="64dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:background="#F0F4F8"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/stashing"
+                android:textSize="12sp"
+                android:textColor="#6E7191"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/activity_details_quantity_text_view"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:textColor="#2B2A41"
+                tools:text="10 шт"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/serial_number"
+                android:textSize="12sp"
+                android:textColor="#6E7191"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/activity_details_serial_number_text_view"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:textColor="#2B2A41"
+                tools:text="W-020-1212-333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/marketplace"
+                android:textSize="12sp"
+                android:textColor="#6E7191"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/activity_details_marketplace_text_view"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:textColor="#2B2A41"
+                tools:text="Зона хранения > Место хранения"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

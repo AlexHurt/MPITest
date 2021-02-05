@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MpiTest</string>
+    <string name="quantity_with_units">%1$d %2$s</string>
+    <string name="stashing">Складировано: </string>
+    <string name="stashing_number">Поступление #%1$s</string>
+    <string name="product_ico">product ico</string>
+    <string name="serial_number">Партийный номер</string>
+    <string name="marketplace">Место хранения</string>
+    <string name="activity_title">Складирование</string>
+</resources>
